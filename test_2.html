@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>objects</h1>
+    <h1>in javascript object can be created in two ways</h1>
+    <h1>1)by using object literal</h1>
+        <h3>syntax:- <br>
+            let objRef={'key':value, <br>
+                'key:,value'}; </h3>
+
+    <h1>2)by using object constructor</h1>
+        <h3>syntax:- <br>
+            let objRef= new object(); <br>
+            objRef.key=value; <br>
+            objRef.key=value; <br>
+        </h3>
+    </center>
+
+    <script>
+        //creating object using object literal..
+
+        let student={
+            id:101,
+            name:'chandan',
+            age:24,
+            address:'banglore'
+        };
+        console.log(student);
+
+        //accessing properties by dot notation 
+        let studentname=student.name;
+        console.log(`student name = ${studentname}`);
+
+        //accessing properties by bracket notation 
+        let studentage=student["age"]
+        console.log(`student age = ${studentage}`);
+
+        // if want to access non existing props the returned value is undefine
+
+        console.log(student.email);
+        console.log(student["course"]);
+
+        
+    </script>
+</body>
+</html>
